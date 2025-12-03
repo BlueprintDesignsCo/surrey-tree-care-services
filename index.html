@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surrey Tree Care Services | Safe, Fast & Professional Arborists</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for professional visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Define custom colors using the provided palette */
+        .bg-primary { background-color: #004D40; } /* Deep Forest Green */
+        .text-primary { color: #004D40; }
+        .bg-secondary { background-color: #1A237E; } /* Classic Navy Blue */
+        .text-secondary { color: #1A237E; }
+        .border-primary { border-color: #004D40; }
+
+        /* General styling and font setting */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333; /* Dark gray text */
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for the section separators/dividers */
+        .section-divider {
+            height: 4px;
+            width: 80px;
+            margin: 1.5rem auto;
+        }
+
+        /* Hero specific styling for the background gradient and overlay */
+        .hero-section {
+            background-image: linear-gradient(rgba(26, 35, 126, 0.7), rgba(0, 77, 64, 0.8)), url('https://placehold.co/1200x600/1A237E/FFFFFF/png?text=Professional+Tree+Care+in+Surrey');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Button hover effect */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation (Fixed at top) -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-primary tracking-tight">
+                Surrey Tree Care
+            </div>
+            <a href="#contact" class="hidden sm:inline-block px-4 py-2 text-sm font-semibold bg-primary text-white rounded-lg hover:bg-opacity-90 transition duration-300">
+                <i data-lucide="phone" class="inline-block w-4 h-4 mr-1"></i>
+                Call Now
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section text-white py-24 md:py-36">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 animate-in fade-in duration-1000">
+                Safe, Fast Tree Care Across Surrey. Book Now.
+            </h1>
+            <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-8">
+                Professional, courteous tree surgeons delivering superb results, on time, with minimal disruption and full site cleanup.
+            </p>
+            <a href="#contact" class="cta-button inline-block px-10 py-4 text-lg font-bold bg-secondary rounded-xl uppercase hover:bg-secondary/90 transition duration-300">
+                Request Your Free, Hassle-Free Quote
+            </a>
+
+            <!-- Core Benefits Section (Integrated into Hero for urgency) -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="p-6 bg-white/10 backdrop-blur-sm rounded-xl shadow-xl">
+                    <i data-lucide="zap" class="w-8 h-8 text-primary mb-3 p-1 rounded-full bg-white"></i>
+                    <h3 class="text-lg font-semibold">Quick, zero-hassle booking and quoting.</h3>
+                </div>
+                <div class="p-6 bg-white/10 backdrop-blur-sm rounded-xl shadow-xl">
+                    <i data-lucide="shield-check" class="w-8 h-8 text-primary mb-3 p-1 rounded-full bg-white"></i>
+                    <h3 class="text-lg font-semibold">Courteous team ensures a clean, safe site.</h3>
+                </div>
+                <div class="p-6 bg-white/10 backdrop-blur-sm rounded-xl shadow-xl">
+                    <i data-lucide="leaf" class="w-8 h-8 text-primary mb-3 p-1 rounded-full bg-white"></i>
+                    <h3 class="text-lg font-semibold">Expert service for tree health and aesthetics.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area Section (Mobile friendly list) -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Serving Surrey and the Surrounding Towns</h2>
+            <p class="text-lg text-gray-600 mb-6">We are your trusted local arborists covering a wide service radius.</p>
+            <div class="flex flex-wrap justify-center gap-2 text-sm font-medium text-white">
+                <!-- Service Area List -->
+                <span class="px-4 py-2 rounded-full bg-primary/90 shadow-md">Surrey</span>
+                <span class="px-4 py-2 rounded-full bg-primary/80 shadow-md">Guildford</span>
+                <span class="px-4 py-2 rounded-full bg-primary/70 shadow-md">Leatherhead</span>
+                <span class="px-4 py-2 rounded-full bg-primary/80 shadow-md">Woking</span>
+                <span class="px-4 py-2 rounded-full bg-primary/90 shadow-md">Cobham</span>
+                <span class="px-4 py-2 rounded-full bg-primary/70 shadow-md">Dorking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Three Services Cards -->
+    <section id="services" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-secondary mb-2">Our Specialist Tree Services</h2>
+                <div class="section-divider bg-secondary"></div>
+                <p class="text-xl text-gray-600">Comprehensive arboriculture solutions tailored for your property's safety and beauty.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service A: Pruning -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-
