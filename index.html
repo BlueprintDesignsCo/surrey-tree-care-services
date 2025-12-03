@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surrey Tree Care Services | Safe, Fast & Professional Arborists</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Define custom colors and utility classes */
+        .bg-primary { background-color: #004D40; } /* Deep Forest Green */
+        .text-primary { color: #004D40; }
+        .bg-secondary { background-color: #1A237E; } /* Classic Navy Blue */
+        .text-secondary { color: #1A237E; }
+        .border-primary { border-color: #004D40; }
+        .shadow-cta { box-shadow: 0 10px 20px -5px rgba(26, 35, 126, 0.4); }
+
+        /* General styling and font setting */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero specific styling: stronger gradient and background */
+        .hero-section {
+            background-image: linear-gradient(135deg, rgba(26, 35, 126, 0.95), rgba(0, 77, 64, 0.9)), url('https://placehold.co/1600x800/1A237E/FFFFFF/png?text=Surrey+Arborists');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* CTA button enhancements */
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* Testimonial card hover for visual appeal */
+        .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 77, 64, 0.15);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-primary tracking-tighter">
+                Surrey Tree Care
+            </a>
+            <a href="#contact" class="hidden sm:inline-flex items-center px-5 py-2 text-sm font-semibold bg-primary text-white rounded-full hover:bg-opacity-90 transition duration-300">
+                <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                Call Now: +44 7917 702978
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section text-white pt-24 pb-16 md:pt-36 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-4 leading-tight">
+                Safe, Fast Tree Care Across Surrey. Book Now.
+            </h1>
+            <p class="text-xl md:text-2xl font-light max-w-4xl mx-auto mb-10 opacity-90">
+                Professional, courteous tree surgeons delivering superb results, on time, with minimal disruption and full site cleanup.
+            </p>
+
+            <a href="#contact" class="cta-button inline-block px-12 py-5 text-xl font-bold bg-secondary rounded-full uppercase shadow-cta hover:bg-secondary/90 transition duration-300">
+                Request Your Free, Hassle-Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Core Benefits Strip -->
+    <section class="py-10 bg-gray-100 border-b border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-4">
+                    <i data-lucide="calendar-check" class="w-8 h-8 text-primary mx-auto mb-2"></i>
+                    <h3 class="text-lg font-bold text-gray-800">Quick, zero-hassle booking and quoting.</h3>
+                </div>
+                <div class="p-4">
+                    <i data-lucide="hand-heart" class="w-8 h-8 text-primary mx-auto mb-2"></i>
+                    <h3 class="text-lg font-bold text-gray-800">Courteous team ensures a clean, safe site.</h3>
+                </div>
+                <div class="p-4">
+                    <i data-lucide="award" class="w-8 h-8 text-primary mx-auto mb-2"></i>
+                    <h3 class="text-lg font-bold text-gray-800">Expert service for tree health and aesthetics.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Specialist Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold uppercase tracking-widest text-sm">Our Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-secondary mt-2">Specialist Tree Services You Can Trust</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service A: Pruning -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-8 border-primary/50">
+                    <div class="p-3 inline-block bg-primary/10 rounded-xl mb-4">
+                        <i data-lucide="scissors" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Professional Tree Pruning</h3>
+                    <p class="text-gray-600 mb-4">Enhance your tree's health, structure, and appearance through strategic trimming and crown reduction. We ensure compliance with all arboricultural standards.</p>
+                    <a href="#contact" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                        Enquire about Pruning <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service B: Removal -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-8 border-primary/50">
+                    <div class="p-3 inline-block bg-primary/10 rounded-xl mb-4">
+                        <i data-lucide="axe" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Safe Tree and Branch Removal</h3>
+                    <p class="text-gray-600 mb-4">Secure removal of hazardous, diseased, or unwanted trees in confined spaces. Our team prioritizes safety for your property and surroundings.</p>
+                    <a href="#contact" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                        Request Removal Quote <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service C: Stump Grinding -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-8 border-primary/50">
+                    <div class="p-3 inline-block bg-primary/10 rounded-xl mb-4">
+                        <i data-lucide="hard-hat" class="w-8 h-8 text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Stump Grinding and Site Clearance</h3>
+                    <p class="text-gray-600 mb-4">Complete removal of unsightly stumps below ground level, paving the way for landscaping or construction. We leave the site spotless.</p>
+                    <a href="#contact" class="text-secondary font-semibold hover:text-primary transition duration-300 flex items-center">
+                        Book Site Clearance <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Trust Us (Guarantees & Trust-Building) -->
+    <section class="bg-secondary text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="font-semibold uppercase tracking-widest text-white/80 text-sm">The Local Difference</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mt-2 mb-6">Why Surrey Chooses Us</h2>
+                    <p class="text-xl leading-relaxed font-semibold mb-6">
+                        <!-- Trust-Building Content -->
+                        With a proven 5-star local rating, we ensure every job is completed quickly, safely, and to the highest standard. Our customers consistently recommend us for our reliable service and meticulous cleanup.
+                    </p>
+                    <a href="#testimonials" class="cta-button inline-flex items-center px-8 py-3 text-lg font-bold bg-primary text-white rounded-full hover:bg-opacity-90 transition duration-300">
+                        See 5-Star Reviews
+                        <i data-lucide="star" class="w-5 h-5 ml-2 fill-yellow-400 stroke-yellow-400"></i>
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start bg-white/10 p-5 rounded-xl border border-white/20">
+                        <i data-lucide="tool" class="w-6 h-6 text-primary bg-white rounded-full p-1 mt-1 mr-4 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="font-bold text-xl">Full Cleanup Guaranteed</h4>
+                            <p class="text-sm opacity-80">We leave the site spotless—including patio wash-down, as noted by clients.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white/10 p-5 rounded-xl border border-white/20">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-primary bg-white rounded-full p-1 mt-1 mr-4 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="font-bold text-xl">Dedicated Local Service</h4>
+                            <p class="text-sm opacity-80">Serving Surrey, Guildford, Woking, Leatherhead, and surrounding areas directly.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white/10 p-5 rounded-xl border border-white/20">
+                        <i data-lucide="users" class="w-6 h-6 text-primary bg-white rounded-full p-1 mt-1 mr-4 flex-shrink-0"></i>
+                        <div>
+                            <h4 class="font-bold text-xl">Courteous, Safe Team</h4>
+                            <p class="text-sm opacity-80">Punctual, professional, and well-mannered crew ensuring minimal hassle for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-2">Client Testimonials</h2>
+                <p class="text-lg text-gray-600">Don't just take our word for it—read what your neighbours say.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary/70">
+                    <i data-lucide="quote" class="w-8 h-8 text-primary/70 mb-3 block transform rotate-180"></i>
+                    <p class="italic text-gray-700 mb-4 text-lg">"Fantastic! David responded quickly... The quality of work was superb and David not only tidied up the clippings but also **washed down the patio** too as this had become a bit messy."</p>
+                    <p class="font-semibold text-primary">— Nikki Halligan, 3 years ago</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary/70">
+                    <i data-lucide="quote" class="w-8 h-8 text-primary/70 mb-3 block transform rotate-180"></i>
+                    <p class="italic text-gray-700 mb-4 text-lg">"Dave and his team did a great job pruning a tree and tidying. He was **on time, courteous, friendly** and took away all the waste at the end of each day. I'd recommend him."</p>
+                    <p class="font-semibold text-primary">— Alex Mason, 5 years ago</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary/70">
+                    <i data-lucide="quote" class="w-8 h-8 text-primary/70 mb-3 block transform rotate-180"></i>
+                    <p class="italic text-gray-700 mb-4 text-lg">"They were very courteous and well mannered. The team provided a **quick and safe service**. I was very well pleased with the outcome, would highly recommend and will be using again in the future. Big thanks to Dave and the team."</p>
+                    <p class="font-semibold text-primary">— Jamie Johnson, 4 years ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. About the Team (David) -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- About Content -->
+                <div>
+                    <span class="text-secondary font-semibold uppercase tracking-widest text-sm">Our Dedication</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-primary mt-2 mb-4">Meet David: Your Local Arborist</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        David is the driving force and primary contact behind Surrey Tree Care Services, known for his **quick response** and commitment to **superb quality**. The reviews consistently highlight his courteous nature and the team's professional, punctual approach.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        From the initial quote to the final cleanup—David ensures a stress-free experience and an outcome you'll be highly pleased with. He leads a team dedicated to safe practices and well-mannered service.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-secondary font-semibold hover:text-primary transition duration-300 border-b-2 border-secondary hover:border-primary pb-1">
+                        Discuss your project with David Today
+                        <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </a>
+                </div>
+                <!-- Image Placeholder -->
+                <div class="rounded-2xl shadow-2xl overflow-hidden aspect-square">
+                    <img src="https://placehold.co/600x600/1A237E/FFFFFF/png?text=David+%26+Surrey+Team" alt="Surrey Tree Care Team" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Footer & Final CTA -->
+    <footer id="contact" class="bg-primary text-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Don't Delay: Get Your Free Quote Now</h2>
+            <p class="text-xl font-light mb-10 max-w-3xl mx-auto opacity-90">
+                Contact David and the team today for prompt service and a detailed, no-obligation quote across Surrey and the South East.
+            </p>
+
+            <!-- Final CTA Button -->
+            <a href="tel:+447917702978" class="cta-button inline-block px-12 py-5 text-2xl font-black bg-secondary rounded-full uppercase shadow-cta hover:bg-secondary/90 transition duration-300">
+                <i data-lucide="phone-call" class="inline-block w-6 h-6 mr-3"></i>
+                Call Us Now: +44 7917 702978
+            </a>
+
+            <!-- Service Area List for SEO/Context -->
+            <div class="mt-12 text-sm text-white/70">
+                <p>Serving: Surrey, Guildford, Leatherhead, Woking, Cobham, Dorking, and surrounding towns.</p>
+                <p class="mt-2">Surrey Tree Care Services | Fully Insured Arborists | Available 24 Hours</p>
+                <p class="mt-1">&copy; 2025 Surrey Tree Care Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons after the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
